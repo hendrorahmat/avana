@@ -1,0 +1,17 @@
+{
+    "name": "hendrs/test-avana",
+    "authors": [
+        {
+            "name": "hendro",
+            "email": "hendro863@gmail.com"
+        }
+    ],
+    "require": {
+        "box/spout": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
