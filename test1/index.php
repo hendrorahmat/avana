@@ -3,17 +3,17 @@
 function proccess(string $data, int $index)
 {
     $totalLength = strlen($data);
-    $totalOpenPaenthesis = 0;
+    $totalOpenParanthesis = 0;
 
     for ($i = 0; $i < $totalLength; $i++) {
         if ($data[$i] === "(" && $i > $index) {
-            $totalOpenPaenthesis++;
+            $totalOpenParanthesis++;
         }
 
         if ($data[$i] === ")" && $i > $index) {
-            $totalOpenPaenthesis--;
+            $totalOpenParanthesis--;
 
-            if ($totalOpenPaenthesis === -1) {
+            if ($totalOpenParanthesis === -1) {
                 return $i;
             }
         }
